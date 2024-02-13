@@ -22,7 +22,13 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Repos/padinesh11@gmail.com/adf_adbs_prm_3"
+					"notebookPath": "/Repos/padinesh11@gmail.com/adf_adbs_prm_3/Mount & Transformation 2024-02-12 18_39_51",
+					"baseParameters": {
+						"ADF_File_Name": {
+							"value": "@pipeline().parameters.PL_PRM",
+							"type": "Expression"
+						}
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
