@@ -5,11 +5,20 @@
 			"referenceName": "AzureBlobStorage2",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"DS_OUT_PRM": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().DS_OUT_PRM",
+					"type": "Expression"
+				},
 				"container": "output"
 			},
 			"columnDelimiter": ",",
